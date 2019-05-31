@@ -26,12 +26,6 @@ cam.release()
 
 cv2.destroyAllWindows()
 
-
-def response_to_soup(response):
-    soup = BeautifulSoup(response, "html.parser")
-    return soup
-
-
 filePath = 'img.png'
 searchUrl = 'http://www.google.com/searchbyimage/upload'
 multipart = {'encoded_image': (filePath, open(filePath, 'rb')), 'image_content': ''}
